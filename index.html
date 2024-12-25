@@ -7911,15 +7911,48 @@ We may need more data to get a more precise judgment.</p>
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h3 id="Objective-3">Objective 3<a class="anchor-link" href="#Objective-3">¶</a></h3><p>For the third part:
 Since the range of the value of "Mother's qualification" and "Father's qualification" are difference and they are complicated, so I simplified them (see the cell below)
-I use the following rule:
-|Qualfication|Old value|New value|
-|----|----|----|
-|Can't read or write / Can read without having a 4th year of schooling|35, 36|0|
-|Basic education|19, 37, 38|1|
-|Junior high school|11, 26, 29, 30|2|
-|Senior high school or non-higher-education|1, 9, 10, 12, 13, 14, 18, 20, 22, 25, 27, 31, 33, 39|3|
-|Higher education|2, 3, 4, 5, 6, 40, 41, 42, 43, 44|4|
-|Unknow|34|delete|</p>
+I use the following rule:</p>
+<table>
+<thead>
+<tr>
+<th>Qualfication</th>
+<th>Old value</th>
+<th>New value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Can't read or write / Can read without having a 4th year of schooling</td>
+<td>35, 36</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Basic education</td>
+<td>19, 37, 38</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Junior high school</td>
+<td>11, 26, 29, 30</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Senior high school or non-higher-education</td>
+<td>1, 9, 10, 12, 13, 14, 18, 20, 22, 25, 27, 31, 33, 39</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Higher education</td>
+<td>2, 3, 4, 5, 6, 40, 41, 42, 43, 44</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Unknow</td>
+<td>34</td>
+<td>delete</td>
+</tr>
+</tbody>
+</table>
 <p>And the pseudocode is:</p>
 <ol>
 <li>Create a new DataFrame consist of "Mother's qualification", "Father's qualification" and "Target"</li>
